@@ -1,1 +1,1 @@
-# ltp-html-course
+# Kathedral's HTML Respository
