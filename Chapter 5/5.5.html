@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+    <title>Table Row and Column Spanning</title>
+        <style>
+        table
+            {
+                width: 100%;
+            }
+        table, tr, td, th
+            {
+            border: 2px solid black;
+            border-collapse: collapse;
+            }
+        th
+            {
+            background-color: darkslateblue;
+            color: cornsilk;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <table cellpadding="3">
+            <tr>
+                <th>Song</th><th>Artist</th><th>Rating</th>
+            </tr>
+            <tr>
+                <td>Wild Wild Life</td><td>Talking Heads</td><td>*****</td>
+            </tr>
+             <tr>
+                <td>Love Shack</td><td>B52s</td><td>*****</td>
+            </tr>       
+             <tr>
+                <td>Sweet Child O' Mine</td><td>Guns n' Roses</td><td>*****</td>
+            </tr>       
+            <tr>
+                <td>Call Me</td><td>Blondie</td><td>*****</td>
+            </tr>
+            <tr>
+                <td>Friday I'm in Love</td><td rowspan="2">The Cure</td><td>*****</td>
+            </tr>
+            <tr>
+                <td>Love Song</td><td>*****</td>
+            </tr>
+        </table>
+    
+    
+    </body>
+
+
+
+
+
+
+</html>
