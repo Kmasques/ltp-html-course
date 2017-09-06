@@ -10,7 +10,7 @@
                 }
             table
                 {
-                width: 100%;
+                
                 }
             table, tr, td, th
                 {
@@ -53,10 +53,10 @@
 
             <table cellpadding="3">
                 <tr>
-                    <th align="right">Are you under a physician's care now?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th><th align="left">If yes, please explain</th><th align="left"><input textarea="text"></th>
+                    <td align="right">Are you under a physician's care now?</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td><td align="left">If yes, please explain</td><td align="left"><input textarea="text"></td>
                 </tr>
                 <tr>
-                    <th align="right">Have you ever been hospitalized or had a major operation?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th><th align="left">If yes, please explain</th><th align="left"><input textarea="text"></th>
+                    <td align="right">Have you ever been hospitalized or had a major operation?</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td><td align="left">If yes, please explain</td><td align="left"><input textarea="text"></td>
                 </tr>
                 <tr>
                     <th align="right">Have you ever had a serious head or neck injury?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th><th align="left">If yes, please explain</th><th align="left"><input textarea="text"></th>
@@ -82,6 +82,24 @@
             </table>
                 
             </fieldset><br/>
+            
+            <fieldset>
+                <legend>Women: Are you</legend>
+                <table cellpadding="3">
+                    <tr>
+                    <th align="left">Pregnant/Trying to get pregnant?</th><th><input type="checkbox"></th><th>Yes</th><th><input type="checkbox"></th><th>No</th><th align="left">Taking oral contraceptives?</th><th><input type="checkbox"></th><th>Yes</th><th><input type="checkbox"></th><th>No</th><th align="left">Nursing?</th><th><input type="checkbox"></th><th>Yes</th><th><input type="checkbox"></th><th>No</th>
+                    </tr><br/>
+                </table>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Are you allergic to any of the following?</legend>
+                <table cellpadding="3">
+                    <tr>
+                    <th align="right">Pregnant/Trying to get pregnant?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th><th align="right">Taking oral contraceptives?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th><th align="right">Nursing?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th>
+                    </tr><br/>
+                </table>
+            </fieldset>
             
             <input id="bands" placeholder="Band Name" list="myBands" />
             <datalist id="myBands">
