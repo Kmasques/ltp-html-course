@@ -12,17 +12,33 @@
             <input type="text" id="last" name="last"  required="required" maxlength="25" autocomplete="off" /><br/>
             <label for="email">Email</label>
             <input type="email" id="email" name="email" /><br/>
-            <input type="phone" id="phone" placeholder="Phone Number" /><br/>
+            <input type="phone" id="phone" placeholder="Phone Number" /><br/><br/>
+            
             <label for="bio">Biography</label><br/>
-            <textarea id="bio" width="100%">Type your biography here</textarea><br/>
+            <textarea id="bio" width="100%">Type your biography here</textarea><br/><br/>
+            
             <input id="bands" placeholder="Band Name" list="myBands" />
             <datalist id="myBands">
+                
                 <option value="Talking Heads"></option>
                 <option value="Blondie"></option>
                 <option value="B52s"></option>
                 <option value="The Cure"></option>
                 <option value="The Police"></option>            
-            </datalist>
+            </datalist><br/><br/>
+            
+            <label id="band">Bands You Like</label><br/>
+            <input type="checkbox" name="bands" value="Talking Heads">Talking Heads<br/>
+            <input type="checkbox" name="bands" value="Blondie">Blondie<br/>
+            <input type="checkbox" name="bands" value="B52s">B52s<br/>
+            <input type="checkbox" name="bands" value="The Cure">The Cure<br/>
+            <input type="checkbox" name="bands" value="The Police">The Police<br/><br/>
+            
+            <label id="gender">Gender</label><br/>
+            <input type="radio" name="gender" value="male">Male<br/>
+            <input type="radio" name="gender" value="female">Female<br/>            
+            <input type="radio" name="gender" value="other">Other<br/>           
+            
         </form>
     </body>
 
