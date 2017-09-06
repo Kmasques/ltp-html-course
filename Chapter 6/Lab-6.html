@@ -5,35 +5,86 @@
         <title>Patient Dental Health Form</title>
         <style>
             p
-            {
+                {
                 font-size: .7em;
-            }
-        
+                }
+            table
+                {
+                width: 100%;
+                }
+            table, tr, td, th
+                {
+                border: 0px;
+                border-collapse: collapse;
+                font-size: 9pt;
+                }
+            th
+                {
+
+                }
+            legend
+                {
+                font-weight: bold;
+                }
         </style>
     </head>
     <body>
         <form action="#" method="post">
-            
+            <h3>Patient Dental Health Form</h3>
             <fieldset>
-                <legend>Patient Dental Health Form</legend>
-                <input type="text" id="first" placeholder="First Name" required="required" maxlength="25" />
-                <input type="text" id="last" placeholder="Last Name"  required="required" maxlength="25" autocomplete="off" /><br/>
-                <label for="dob">Date of Birth</label>
-                <input type="date" id="dob" /><br/>
+                <legend>Your Personal Information</legend>
+                <table>
+                <th></th><th></th>
+                <tr><label id="first">First Name</label></tr><br/>
+                <tr align="left"><input type="text" id="first" name="first" required="required" autocomplete="off" /></tr><br/>
+                <tr><label id="last">Last Name</label></tr><br/>
+                <tr align="left"><input type="text" id="last" name="last"  required="required" autocomplete="off"  /></tr>
+                </table>
+                
+                <label for="dob">Date of Birth</label><br/>
+                <input type="date" id="dob" name="dob" /><br/><br/>
                 <input type="email" id="email" placeholder="Email" />
                 <input type="phone" id="phone" placeholder="Phone Number" /><br/>
             </fieldset><br/>
             
             <fieldset>
-                <legend>Health Data</legend>
+                <legend>Your Health Data</legend>
                 <p>Although dental personnel primarily treat the area in and around your mouth, your mouth is part of your entire body.  Health problems that you may have, or medication that you may be taking, could have an important interrelationship wiht the dentistry you receive.  Thank you for answering the following questions:</p>
 
+            <table cellpadding="3">
+                <tr>
+                    <th align="right">Are you under a physician's care now?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th><th align="left">If yes, please explain</th><th align="left"><input textarea="text"></th>
+                </tr>
+                <tr>
+                    <th align="right">Have you ever been hospitalized or had a major operation?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th><th align="left">If yes, please explain</th><th align="left"><input textarea="text"></th>
+                </tr>
+                <tr>
+                    <th align="right">Have you ever had a serious head or neck injury?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th><th align="left">If yes, please explain</th><th align="left"><input textarea="text"></th>
+                </tr>
+                <tr>
+                    <th align="right">Are you taking any medications, pills, or drugs?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th><th align="left">If yes, please explain</th><th align="left"><input textarea="text"></th>
+                </tr>
+                <tr>
+                    <th align="right">Do you take, or have you taken, Phen-Fen or Redux?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th>
+                </tr>
+                <tr>
+                    <th align="right">Have you ever taken Fosamax, Boniva, Actonel or any other medications containing bisphosphonates?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th>
+                </tr>
+                <tr>
+                    <th align="right">Are you on a special diet?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th>
+                </tr>
+                <tr>
+                    <th align="right">Do you use tobacco?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th>
+                </tr>
+                <tr>
+                    <th align="right">Do you use controlled substances?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th>
+                </tr>
+            </table>
                 
             </fieldset><br/>
             
             <input id="bands" placeholder="Band Name" list="myBands" />
             <datalist id="myBands">
-                
                 <option value="Talking Heads"></option>
                 <option value="Blondie"></option>
                 <option value="B52s"></option>
