@@ -2,25 +2,33 @@
 
 <html>
     <head>
-        <title>Field Sets</title>        
+        <title>Patient Dental Health Form</title>
+        <style>
+            p
+            {
+                font-size: .7em;
+            }
+        
+        </style>
     </head>
     <body>
         <form action="#" method="post">
             
             <fieldset>
-                <label for="first">First</label>
-                <input type="text" id="first" name="first" required="required" maxlength="25" /><br/>
-                <label for="Last">Last</label>
-                <input type="text" id="last" name="last"  required="required" maxlength="25" autocomplete="off" /><br/>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" /><br/>
+                <legend>Patient Dental Health Form</legend>
+                <input type="text" id="first" placeholder="First Name" required="required" maxlength="25" />
+                <input type="text" id="last" placeholder="Last Name"  required="required" maxlength="25" autocomplete="off" /><br/>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" /><br/>
+                <input type="email" id="email" placeholder="Email" />
                 <input type="phone" id="phone" placeholder="Phone Number" /><br/>
             </fieldset><br/>
             
             <fieldset>
-                <legend>Personal Data</legend>
-                <label for="bio">Biography</label><br/>
-                <textarea id="bio" width="100%">Type your biography here</textarea><br/><br/>
+                <legend>Health Data</legend>
+                <p>Although dental personnel primarily treat the area in and around your mouth, your mouth is part of your entire body.  Health problems that you may have, or medication that you may be taking, could have an important interrelationship wiht the dentistry you receive.  Thank you for answering the following questions:</p>
+
+                
             </fieldset><br/>
             
             <input id="bands" placeholder="Band Name" list="myBands" />
@@ -55,8 +63,7 @@
                 <option value="New Mexico">New Mexico</option>
             </select><br/><br/>
             
-            <label for"dob">Date of Birth</label>
-            <input type="date" id="dob" /><br/><br/>
+
                     
             <label for="quantity">Quantity of Apples</label>
             <input type="number" id="quantity" min="0" max="25"/><br/><br/>
