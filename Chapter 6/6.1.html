@@ -7,20 +7,27 @@
     <body>
         <form action="#" method="post">
             <label for="first">First</label>
-            <input type="text" id="first" name="first" /><br/>
+            <input type="text" id="first" name="first" required="required" maxlength="25" /><br/>
             <label for="Last">Last</label>
-            <input type="text" id="last" name="last" /><br/>
+            <input type="text" id="last" name="last"  required="required" maxlength="25" autocomplete="off" /><br/>
             <label for="email">Email</label>
             <input type="email" id="email" name="email" /><br/>
             <input type="phone" id="phone" placeholder="Phone Number" /><br/>
             <label for="bio">Biography</label><br/>
             <textarea id="bio" width="100%">Type your biography here</textarea><br/>
+            <input id="bands" placeholder="Band Name" list="myBands" />
+            <datalist id="myBands">
+                <option value="Talking Heads"></option>
+                <option value="Blondie"></option>
+                <option value="B52s"></option>
+                <option value="The Cure"></option>
+                <option value="The Police"></option>            
+            </datalist>
         </form>
-    
     </body>
 
 
-
+ 
 
 
 </html>
