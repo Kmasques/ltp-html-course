@@ -6,19 +6,19 @@
         <style>
             p
                 {
-                font-size: .7em;
+                font-size: .9em;
                 }
             table
                 {
-                
-                }
-            table, tr, td, th
-                {
                 border: 0px;
                 border-collapse: collapse;
-                font-size: 9pt;
+                font-size: 10pt;
                 }
-            th
+            tr
+                {
+                border: none;
+                }
+            td
                 {
 
                 }
@@ -26,32 +26,26 @@
                 {
                 font-weight: bold;
                 }
+            fieldset
+                {
+                padding: 5px;
+                }
         </style>
     </head>
     <body>
         <form action="#" method="post">
             <h3>Patient Dental Health Form</h3>
-            <fieldset>
-                <legend>Your Personal Information</legend>
-                <table>
-                <th></th><th></th>
-                <tr><label id="first">First Name</label></tr><br/>
-                <tr align="left"><input type="text" id="first" name="first" required="required" autocomplete="off" /></tr><br/>
-                <tr><label id="last">Last Name</label></tr><br/>
-                <tr align="left"><input type="text" id="last" name="last"  required="required" autocomplete="off"  /></tr>
-                </table>
-                
-                <label for="dob">Date of Birth</label><br/>
-                <input type="date" id="dob" name="dob" /><br/><br/>
-                <input type="email" id="email" placeholder="Email" />
-                <input type="phone" id="phone" placeholder="Phone Number" /><br/>
-            </fieldset><br/>
-            
-            <fieldset>
-                <legend>Your Health Data</legend>
+            <table>
+                <tr>
+                    <td><label id="first">First Name</label></td>
+                    <td><input type="text" id="first" name="first" required="required" autocomplete="off" /></td>
+                    <td><label id="last">Last Name</label></td><td><input type="text" id="last" name="last" required="required" autocomplete="off" /></td>
+                </tr>
+            </table><br/>
+
                 <p>Although dental personnel primarily treat the area in and around your mouth, your mouth is part of your entire body.  Health problems that you may have, or medication that you may be taking, could have an important interrelationship wiht the dentistry you receive.  Thank you for answering the following questions:</p>
 
-            <table cellpadding="3">
+            <table>
                 <tr>
                     <td align="right">Are you under a physician's care now?</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td><td align="left">If yes, please explain</td><td align="left"><input textarea="text"></td>
                 </tr>
@@ -59,88 +53,80 @@
                     <td align="right">Have you ever been hospitalized or had a major operation?</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td><td align="left">If yes, please explain</td><td align="left"><input textarea="text"></td>
                 </tr>
                 <tr>
-                    <th align="right">Have you ever had a serious head or neck injury?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th><th align="left">If yes, please explain</th><th align="left"><input textarea="text"></th>
+                <tr>
+                    <td align="right">Have you ever had a serious head or neck injury?</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td><td align="left">If yes, please explain</td><td align="left"><input textarea="text"></td>
                 </tr>
                 <tr>
-                    <th align="right">Are you taking any medications, pills, or drugs?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th><th align="left">If yes, please explain</th><th align="left"><input textarea="text"></th>
+                    <td align="right">Are you taking any medications, pills, or drugs?</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td><td align="left">If yes, please explain</td><td align="left"><input textarea="text"></td>
                 </tr>
                 <tr>
-                    <th align="right">Do you take, or have you taken, Phen-Fen or Redux?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th>
+                    <td align="right">Do you take, or have you taken, Phen-Fen or Redux?</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td>
                 </tr>
                 <tr>
-                    <th align="right">Have you ever taken Fosamax, Boniva, Actonel or any other medications containing bisphosphonates?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th>
+                    <td align="right">Have you ever taken Fosamax, Boniva, Actonel or any otder medications containing bisphosphonates?</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td>
                 </tr>
                 <tr>
-                    <th align="right">Are you on a special diet?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th>
+                    <td align="right">Are you on a special diet?</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td>
                 </tr>
                 <tr>
-                    <th align="right">Do you use tobacco?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th>
+                    <td align="right">Do you use tobacco?</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td>
                 </tr>
                 <tr>
-                    <th align="right">Do you use controlled substances?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th>
+                    <td align="right">Do you use controlled substances?</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td>
                 </tr>
             </table>
-                
+            
+            <fieldset>
+            <legend>Women: Are you</legend>
+                <table>
+                    <tr>
+                        <td align="left">Pregnant/Trying to get pregnant?</td><td><input type="checkbox"></td><td>Yes</td><td><input type="checkbox"></td><td>No</td>
+                        <td ></td>
+                        <td align="left">Taking oral contraceptives?</td><td><input type="checkbox"></td><td>Yes</td><td><input type="checkbox"></td><td>No</td>
+                        <td align="left">Nursing?</td><td><input type="checkbox"></td><td>Yes</td><td><input type="checkbox"></td><td>No</td>
+                    </tr>
+                </table>
             </fieldset><br/>
             
             <fieldset>
-                <legend>Women: Are you</legend>
-                <table cellpadding="3">
+            <legend>Are you allergic to any of the following?</legend>
+                <table>
                     <tr>
-                    <th align="left">Pregnant/Trying to get pregnant?</th><th><input type="checkbox"></th><th>Yes</th><th><input type="checkbox"></th><th>No</th><th align="left">Taking oral contraceptives?</th><th><input type="checkbox"></th><th>Yes</th><th><input type="checkbox"></th><th>No</th><th align="left">Nursing?</th><th><input type="checkbox"></th><th>Yes</th><th><input type="checkbox"></th><th>No</th>
-                    </tr><br/>
+                        <td><input type="checkbox"></td><td>Aspirin</td><td></td>
+                        <td><input type="checkbox"></td><td>Penicillin</td><td></td>
+                        <td><input type="checkbox"></td><td>Codeine</td><td></td>
+                        <td><input type="checkbox"></td><td>Local Anesthetics</td><td></td>
+                        <td><input type="checkbox"></td><td>Acylic</td><td></td>
+                        <td><input type="checkbox"></td><td>Metal</td><td></td>
+                        <td><input type="checkbox"></td><td>Latex</td><td></td>
+                        <td><input type="checkbox"></td><td>Sulfa drugs</td><td></td>
+                    </tr>
                 </table>
-            </fieldset>
-            
+                <table>
+                    <tr>
+                        <td><input type="checkbox"></td><td>Other</td>
+                        <td>          </td><td align="left">If other, please explain:</td><td align="left"><input textarea="text"></td>
+                    </tr>
+                </table>
+            </fieldset><br/>
             <fieldset>
-                <legend>Are you allergic to any of the following?</legend>
-                <table cellpadding="3">
+            <legend>Do you have, or have you had, any of the following?</legend>
+                <table>
                     <tr>
-                    <th align="right">Pregnant/Trying to get pregnant?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th><th align="right">Taking oral contraceptives?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th><th align="right">Nursing?</th><th><input type="checkbox"></th><th align="left">Yes</th><th><input type="checkbox"></th><th align="left">No</th>
-                    </tr><br/>
+                        <td align="left">AIDS/HIV Positive</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td>
+                        <td align="left">Cortison Medicine</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td>
+                        <td align="left">Hemophilia</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td>
+                        <td align="left">Radiation Treatments</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td>
+                    </tr>
+                    <tr>
+                        <td align="left">Alzheimer's Disease</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td>
+                        <td align="left">Diabetes</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td>
+                        <td align="left">Hepatitis A</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td>
+                        <td align="left">Recent Weight Loss</td><td><input type="checkbox"></td><td align="left">Yes</td><td><input type="checkbox"></td><td align="left">No</td>
+                    </tr>
                 </table>
             </fieldset>
-            
-            <input id="bands" placeholder="Band Name" list="myBands" />
-            <datalist id="myBands">
-                <option value="Talking Heads"></option>
-                <option value="Blondie"></option>
-                <option value="B52s"></option>
-                <option value="The Cure"></option>
-                <option value="The Police"></option>            
-            </datalist><br/><br/>
-            
-            <label id="band">Bands You Like</label><br/>
-            <input type="checkbox" name="bands" value="Talking Heads">Talking Heads<br/>
-            <input type="checkbox" name="bands" value="Blondie">Blondie<br/>
-            <input type="checkbox" name="bands" value="B52s">B52s<br/>
-            <input type="checkbox" name="bands" value="The Cure">The Cure<br/>
-            <input type="checkbox" name="bands" value="The Police">The Police<br/><br/>
-            
-            <label id="gender">Gender</label><br/>
-            <input type="radio" name="gender" value="male">Male<br/>
-            <input type="radio" name="gender" value="female">Female<br/>            
-            <input type="radio" name="gender" value="other">Other<br/><br/>
-            
-            <label id="state">State</label>
-            <select id="state" name="state">
-                <option value="Alabama">Alabama</option>
-                <option value="Alaska">Alaska</option>
-                <option value="Colorado">Colorado</option>
-                <option value="Connecticut">Connecticut</option>                
-                <option value="New Hampshire">New Hampshire</option>
-                <option value="New Mexico">New Mexico</option>
-            </select><br/><br/>
-            
-
-                    
-            <label for="quantity">Quantity of Apples</label>
-            <input type="number" id="quantity" min="0" max="25"/><br/><br/>
-            
-            <button type="submit">Send Form</button><br/><br/>
-            <button type="reset">Reset Form</button><br/>            
-
-            
+          
         </form>
     </body>
 
